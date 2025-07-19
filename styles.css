@@ -1,0 +1,84 @@
+@font-face {
+    font-family: Norse-Bold;
+    src: url(Norse-Bold.otf);
+}
+
+*{
+    box-sizing: border-box;
+    margin:0;
+    padding:0;
+}
+body{
+    display:flex;
+    font-family: Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+/*LEFT SIDE*/
+
+.left-side{
+    width:40%;
+    display: flex;
+    flex-direction: column;
+    justify-content:space-between;
+    background-image:url("images/background.jpg");
+    background-repeat: no-repeat;
+    background-size:cover;
+    height:100vh;
+    color:white;
+}
+
+.logo-background{
+    background-color: rgba(0,0,0,0.5);
+    width:100%;
+    display:flex;
+    justify-content: center;
+    margin-top:30%;
+    padding:20px;
+    gap: 10px;
+}
+
+.odin-logo{
+    max-width:82px;
+}
+.logo-text{
+    font-family:Norse-Bold;
+    font-size:96px;
+}
+
+.photo-credit{
+    text-align:center;
+    padding:15px;
+}
+
+.photo-credit p, .photo-credit a{
+    color:white;
+}
+
+/*RIGHT SIDE*/
+
+.right-side{
+    padding: 48px;
+    width:60%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap:96px;
+}
+
+.description{
+    display: flex;
+    flex-direction:column;
+    gap:32px;
+}
+
+.description-text{
+    font-size:18px;
+    font-weight:550;
+}
+
+#create-account{
+    background-color:#596D48;
+    color:white;
+    width:160px;
+}
+
