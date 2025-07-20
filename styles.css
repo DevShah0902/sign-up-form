@@ -11,6 +11,7 @@
 body{
     display:flex;
     font-family: Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    width:100vw;
 }
 
 /*LEFT SIDE*/
@@ -69,16 +70,98 @@ body{
     display: flex;
     flex-direction:column;
     gap:32px;
+    width:clamp(500px, 80%, 700px);
 }
 
 .description-text{
-    font-size:18px;
+    font-size:24px;
     font-weight:550;
+}
+
+.main-form{
+    display:flex;
+    flex-direction:column;
+    gap:48px;
+    width:clamp(500px, 80%, 700px);
+}
+
+.inputs{
+    display:flex;
+    flex-wrap: wrap;
+}
+
+.input-container{
+    width:40%;
+    display:flex;
+    flex-direction:column;
+}
+
+legend{
+    margin-bottom:30px;
+    font-size:24px;
+    font-weight:500;
+}
+
+fieldset{
+    border:0px;
+    display:flex;
+    gap:12px;
+}
+
+.input-container:nth-child(2n+1){
+    margin-left:10%;
+}
+
+.input-container label{
+    text-transform: uppercase;
+    font-size:14px;
+    color: black;
+    padding-bottom:2px;
+}
+
+.input-container input{
+    height:36px;
+    border: solid 1px #E5E7EB;
+    border-radius: 5px;
+    width:max(80%, 200px);
+}
+
+.input-container input:focus{
+    height:36px;
+    border: solid 1px blue;
+    border-radius: 5px;
+    width:max(80%, 200px);
+    outline:none;
+    box-shadow:2px 2px gray;
+}
+
+
+.input-container input:invalid:not(:focus){
+    height:36px;
+    border: solid 1px red;
+    border-radius: 5px;
+    width:max(80%, 200px);
 }
 
 #create-account{
     background-color:#596D48;
     color:white;
-    width:160px;
+    width:200px;
+    height:40px;
+    border: black, solid, 1px;
+    border-radius:5px;
+    font-weight:600;
+    font-size: 16px;;
 }
+
+.log-in{
+    font-size:16px;
+}
+.log-in-link{
+    text-decoration:none;
+    color:#596D48;
+    font-weight:600;
+}
+
+
 
